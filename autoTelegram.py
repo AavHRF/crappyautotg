@@ -24,9 +24,9 @@ while True:
         nation = text_file.readline(i)
         params = {
             "a": "sendTG",
-            "client": api_key
-            "to": nation
-            "tgid": tgid
+            "client": api_key,
+            "to": nation,
+            "tgid": tgid,
             "key": secret_key
         }
         requests.get("https://www.nationstates.net/cgi-bin/api.cgi", headers=headers, params=params)
