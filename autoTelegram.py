@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import time
 
 useragent = input("USERAGENT: ")
 secret_key = input("SKEY: ")
@@ -30,3 +31,4 @@ while True:
             "key": secret_key
         }
         requests.get("https://www.nationstates.net/cgi-bin/api.cgi", headers=headers, params=params)
+        time.sleep(180)
